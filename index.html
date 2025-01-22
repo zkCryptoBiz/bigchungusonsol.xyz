@@ -31,35 +31,41 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            width: 200px;
-            background-color: #f8f8f8;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 10px;
-            font-family: Arial, sans-serif;
+            width: 250px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
             text-align: center;
             z-index: 1000;
         }
 
+        .music-widget h4 {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
         .music-widget button {
-            background-color: #007bff;
-            color: white;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #007bff;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             padding: 10px 15px;
             font-size: 14px;
+            font-weight: bold;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
 
         .music-widget button:hover {
-            background-color: #0056b3;
+            background-color: rgba(255, 255, 255, 1);
         }
 
-        .music-widget .song-title {
-            font-size: 14px;
-            margin-top: 10px;
-            font-weight: bold;
+        .music-widget audio {
+            display: none;
         }
     </style>
 
@@ -1755,8 +1761,8 @@
 	</div>
 
 	  <div class="music-widget">
+        <h4 id="songTitle">🎵 Now Playing: Song Name</h4>
         <button id="playPauseBtn">▶ Start</button>
-        <div class="song-title" id="songTitle">Now Playing: Song Name</div>
         <audio id="audioPlayer" loop>
             <source src="your-music-file.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -1770,7 +1776,7 @@
 
         // Название текущей песни
         const currentSong = "Your Song Name"; // Укажите здесь название песни
-        songTitle.textContent = `Now Playing: ${currentSong}`;
+        songTitle.textContent = `🎵 Now Playing: ${currentSong}`;
 
         playPauseBtn.addEventListener('click', () => {
             if (audioPlayer.paused) {
