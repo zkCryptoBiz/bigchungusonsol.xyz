@@ -26,7 +26,7 @@
 
 		}
 	</style>
-	 <style>
+	<style>
         .music-widget {
             position: fixed;
             bottom: 20px;
@@ -62,6 +62,14 @@
 
         .music-widget button:hover {
             background-color: rgba(255, 255, 255, 1);
+        }
+
+        .music-widget .volume-control {
+            margin-top: 15px;
+        }
+
+        .music-widget input[type="range"] {
+            width: 100%;
         }
 
         .music-widget audio {
@@ -1760,9 +1768,13 @@
 
 	</div>
 
-	  <div class="music-widget">
+	   <div class="music-widget">
         <h4 id="songTitle">🎵 Now Playing: Song Name</h4>
         <button id="playPauseBtn">▶ Start</button>
+        <div class="volume-control">
+            <label for="volumeSlider">Volume:</label>
+            <input id="volumeSlider" type="range" min="0" max="1" step="0.1" value="0.5">
+        </div>
         <audio id="audioPlayer" loop>
             <source src="your-music-file.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -1773,11 +1785,16 @@
         const playPauseBtn = document.getElementById('playPauseBtn');
         const audioPlayer = document.getElementById('audioPlayer');
         const songTitle = document.getElementById('songTitle');
+        const volumeSlider = document.getElementById('volumeSlider');
 
         // Название текущей песни
         const currentSong = "Your Song Name"; // Укажите здесь название песни
         songTitle.textContent = `🎵 Now Playing: ${currentSong}`;
 
+        // Установка начального уровня громкости
+        audioPlayer.volume = volumeSlider.value;
+
+        // Управление воспроизведением
         playPauseBtn.addEventListener('click', () => {
             if (audioPlayer.paused) {
                 audioPlayer.play();
@@ -1786,6 +1803,11 @@
                 audioPlayer.pause();
                 playPauseBtn.textContent = '▶ Start';
             }
+        });
+
+        // Управление громкостью
+        volumeSlider.addEventListener('input', () => {
+            audioPlayer.volume = volumeSlider.value;
         });
     </script>
 
