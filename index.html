@@ -153,6 +153,157 @@
 	<link rel="stylesheet" type="text/css" href="media/smartslider3/src/SmartSlider3/Application/Frontend/Assets/dist/smartslider.min%EF%B9%96ver%3Df4759c2e.css" media="all">
 	<link rel="stylesheet" type="text/css" href="css-1?display=swap&amp;family=Roboto%3A300%2C400%2C500%2C600%2C700%2C800%2C900" media="all">
 	<style data-related="n2-ss-47">
+    div#n2-ss-47 .n2-ss-slider-1 {
+        display: grid;
+        box-sizing: border-box;
+        position: relative;
+        background-repeat: repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-attachment: scroll;
+        border: 0px solid RGBA(62, 62, 62, 1);
+        border-radius: 0px;
+        overflow: hidden;
+    }
+
+    div#n2-ss-47:not(.n2-ss-loaded) .n2-ss-slider-1 {
+        background-image: none !important;
+    }
+
+    div#n2-ss-47 .n2-ss-slider-2 {
+        display: grid;
+        place-items: center;
+        position: relative;
+        overflow: hidden;
+        z-index: 10;
+    }
+
+    div#n2-ss-47 .n2-ss-slider-3 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 20;
+        display: grid;
+        grid-template-areas: 'slide';
+    }
+
+    div#n2-ss-47 .n2-ss-slider-3>* {
+        grid-area: slide;
+    }
+
+    div#n2-ss-47.n2-ss-full-page--constrain-ratio .n2-ss-slider-3 {
+        height: auto;
+    }
+
+    div#n2-ss-47 .n2-ss-slide-backgrounds {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    div#n2-ss-47 .n2-ss-slide-backgrounds {
+        z-index: 10;
+    }
+
+    div#n2-ss-47 .n2-ss-slide {
+        display: grid;
+        place-items: center;
+        grid-auto-columns: 100%;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        z-index: 20;
+    }
+
+    div#n2-ss-47 .n2-ss-slide {
+        perspective: 1500px;
+    }
+
+    div#n2-ss-47 img {
+        width: 100px; /* Установите ширину */
+        height: 100px; /* Установите высоту */
+        object-fit: cover; /* Гарантирует, что изображение не исказится */
+        border-radius: 10px; /* Добавьте закругленные углы */
+        margin: 5px; /* Установите отступы между изображениями */
+    }
+
+    div#n2-ss-47 .n-uc-1bf23d0c7b19d-inner {
+        background-color: RGBA(255, 255, 255, 0.77);
+        border-width: 0px 0px 0px 0px;
+        border-style: solid;
+        border-color: RGBA(255, 255, 255, 1);
+    }
+
+    div#n2-ss-47 .n-uc-1bf23d0c7b19d-inner:HOVER {
+        border-width: 0px 0px 0px 0px;
+        border-style: solid;
+        border-color: RGBA(255, 255, 255, 1);
+    }
+
+    div#n2-ss-47 .n-uc-1cb2288472c6a-inner {
+        border-width: 0px 0px 0px 0px;
+        border-style: solid;
+        border-color: RGBA(255, 255, 255, 1);
+    }
+
+    div#n2-ss-47 .n-uc-1cb2288472c6a-inner:HOVER {
+        border-width: 0px 0px 0px 0px;
+        border-style: solid;
+        border-color: RGBA(255, 255, 255, 1);
+    }
+
+    div#n2-ss-47 .n2-font-d18f2aeaa4d3c1955e3e9a823b160a54-hover {
+        font-family: 'Roboto', 'Arial';
+        color: #045fb7;
+        font-size: 437.5%;
+        text-shadow: none;
+        line-height: 1;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none;
+        text-align: inherit;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        font-weight: 400;
+    }
+
+    div#n2-ss-47 .n2-font-68dd51662b1f7e5c2cb5db7413d57dd3-hover {
+        font-family: 'Roboto', 'Arial';
+        color: #ef950f;
+        font-size: 181.25%;
+        text-shadow: 0px 0px 22px RGBA(255, 204, 0, 1);
+        line-height: 1;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none;
+        text-align: inherit;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        font-weight: 400;
+    }
+
+    div#n2-ss-47 .n2-font-22a16ba04a751dc781fd30d5fe136a50-hover {
+        font-family: 'Roboto', 'Arial';
+        color: #191919;
+        font-size: 131.25%;
+        text-shadow: 0px 0px 22px RGBA(255, 204, 0, 1);
+        line-height: 1;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none;
+        text-align: inherit;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        font-weight: 400;
+    }
+</style>
+	<style data-related="n2-ss-47">
 		div#n2-ss-47 .n2-ss-slider-1 {
 			display: grid;
 			box-sizing: border-box;
