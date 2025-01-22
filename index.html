@@ -78,24 +78,23 @@
             display: none;
         }
 
-        .icon {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 32px;
-            font-weight: bold;
+        .feedback {
+            position: fixed;
+            bottom: 200px;
+            right: 40px;
+            background: rgba(0, 0, 0, 0.7);
             color: white;
-            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            opacity: 0;
             pointer-events: none;
+            transition: opacity 0.3s ease-in-out;
         }
 
-        .music-widget.active .icon::before {
-            content: "⏸"; /* Pause icon */
-        }
-
-        .music-widget.inactive .icon::before {
-            content: "▶"; /* Play icon */
+        .feedback.show {
+            opacity: 1;
         }
     </style>
 	<script type="application/json" class="joomla-script-options new" nonce="ZWMyY2U4NGUwMDRlYmRlOWVkOWRjODZkYmY5NmRiNzRiYzUwNWE1NTU0ZDAxMzNhMTAxYzgwODEwYmRiN2VlODQ0YjI1YzMwYmU0MzgxNzE0YWE1OTY4YWI0NmZiMTYyMmRlZWYyZTE1MzNjMTRkN2U4NTkxNmQyYjdjYjUzNjg=">{"joomla.jtext":{"ERROR":"Error","MESSAGE":"Message","NOTICE":"Notice","WARNING":"Warning","JCLOSE":"Close","JOK":"OK","JOPEN":"Open"},"system.paths":{"root":"","rootFull":"https:\/\/welovekabosu.com\/","base":"","baseFull":"https:\/\/welovekabosu.com\/"},"csrf.token":"71afe87d7f0c5ecdae47f9ceea3be3c2"}</script>
@@ -1894,17 +1893,18 @@
 	</div>
 
 	  <div class="music-widget inactive" id="musicWidget">
-        <img src="images/sampledata/bigchungustitle.png" alt="Music Icon">
-        <div class="icon"></div>
+        <img src="your-icon.png" alt="Music Icon">
         <audio id="audioPlayer" class="hidden" loop muted>
-            <source src="media/BIGCHUNGUS_theme.mp3" type="audio/mpeg">
+            <source src="your-music-file.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
+    <div id="feedback" class="feedback">Playing</div>
 
     <script>
         const musicWidget = document.getElementById('musicWidget');
         const audioPlayer = document.getElementById('audioPlayer');
+        const feedback = document.getElementById('feedback');
         let rotationStart = 0;
 
         // Function to get the current rotation angle
@@ -1921,6 +1921,13 @@
             return 0;
         }
 
+        // Show temporary feedback
+        function showFeedback(message) {
+            feedback.textContent = message;
+            feedback.classList.add('show');
+            setTimeout(() => feedback.classList.remove('show'), 1000);
+        }
+
         // Play music and rotate icon
         musicWidget.addEventListener('click', () => {
             if (audioPlayer.paused) {
@@ -1930,12 +1937,14 @@
                 audioPlayer.play();
                 musicWidget.classList.remove('inactive');
                 musicWidget.classList.add('active');
+                showFeedback('Playing');
             } else {
                 rotationStart = getCurrentRotation();
                 musicWidget.style.setProperty('--rotation-start', `${rotationStart}deg`);
                 audioPlayer.pause();
                 musicWidget.classList.remove('active');
                 musicWidget.classList.add('inactive');
+                showFeedback('Paused');
             }
         });
 
