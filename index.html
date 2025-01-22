@@ -48,6 +48,7 @@
             transform-origin: center;
             transform: rotate(var(--rotation-start, 0deg));
             transition: transform 0.3s ease-in-out;
+            position: relative;
         }
 
         .music-widget.active {
@@ -78,22 +79,22 @@
             display: none;
         }
 
-        .feedback {
-            position: fixed;
-            bottom: 200px;
-            right: 40px;
+        .feedback-icon {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
             background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
             color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: bold;
             opacity: 0;
-            pointer-events: none;
             transition: opacity 0.3s ease-in-out;
         }
 
-        .feedback.show {
+        .music-widget .feedback-icon.show {
             opacity: 1;
         }
     </style>
@@ -1894,17 +1895,17 @@
 
 	  <div class="music-widget inactive" id="musicWidget">
         <img src="images/sampledata/bigchungustitle.png" alt="Music Icon">
+        <div id="feedbackIcon" class="feedback-icon">▶</div>
         <audio id="audioPlayer" class="hidden" loop muted>
             <source src="media/BIGCHUNGUS_theme.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
-    <div id="feedback" class="feedback">Playing</div>
 
     <script>
         const musicWidget = document.getElementById('musicWidget');
         const audioPlayer = document.getElementById('audioPlayer');
-        const feedback = document.getElementById('feedback');
+        const feedbackIcon = document.getElementById('feedbackIcon');
         let rotationStart = 0;
 
         // Function to get the current rotation angle
@@ -1922,10 +1923,10 @@
         }
 
         // Show temporary feedback
-        function showFeedback(message) {
-            feedback.textContent = message;
-            feedback.classList.add('show');
-            setTimeout(() => feedback.classList.remove('show'), 1000);
+        function showFeedback(icon) {
+            feedbackIcon.textContent = icon;
+            feedbackIcon.classList.add('show');
+            setTimeout(() => feedbackIcon.classList.remove('show'), 1000);
         }
 
         // Play music and rotate icon
@@ -1937,14 +1938,14 @@
                 audioPlayer.play();
                 musicWidget.classList.remove('inactive');
                 musicWidget.classList.add('active');
-                showFeedback('Playing');
+                showFeedback('▶');
             } else {
                 rotationStart = getCurrentRotation();
                 musicWidget.style.setProperty('--rotation-start', `${rotationStart}deg`);
                 audioPlayer.pause();
                 musicWidget.classList.remove('active');
                 musicWidget.classList.add('inactive');
-                showFeedback('Paused');
+                showFeedback('⏸');
             }
         });
 
@@ -1959,7 +1960,6 @@
             musicWidget.classList.add('active');
         });
     </script>
-
 
 	<script>
 		(function (c, d) {
