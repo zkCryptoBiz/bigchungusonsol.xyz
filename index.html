@@ -1819,8 +1819,10 @@
         window.addEventListener('load', () => {
             rotationStart = 0;
             musicWidget.style.setProperty('--rotation-start', `${rotationStart}deg`);
-            audioPlayer.play().catch(() => {
-                console.log('Autoplay blocked by the browser.');
+            audioPlayer.play().then(() => {
+                console.log('Music started muted on page load.');
+            }).catch(() => {
+                console.log('Autoplay with muted audio is blocked.');
             });
             musicWidget.classList.remove('inactive');
             musicWidget.classList.add('active');
