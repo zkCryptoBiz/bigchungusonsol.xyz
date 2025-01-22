@@ -47,6 +47,7 @@
             align-items: center;
             cursor: pointer;
             transform-origin: center;
+            transform: rotate(var(--rotation-start, 0deg));
             transition: transform 0.3s ease-in-out;
         }
 
@@ -1782,24 +1783,32 @@
         const audioPlayer = document.getElementById('audioPlayer');
         let rotationStart = 0;
 
+        // Function to get the current rotation angle
+        function getCurrentRotation() {
+            const computedStyle = window.getComputedStyle(musicWidget);
+            const matrix = computedStyle.transform;
+            if (matrix !== 'none') {
+                const values = matrix.split('(')[1].split(')')[0].split(',');
+                const a = values[0];
+                const b = values[1];
+                const angle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
+                return angle < 0 ? angle + 360 : angle;
+            }
+            return 0;
+        }
+
         // Play music and rotate icon
         musicWidget.addEventListener('click', () => {
             if (audioPlayer.paused) {
-                audioPlayer.play();
+                rotationStart = getCurrentRotation();
                 musicWidget.style.setProperty('--rotation-start', `${rotationStart}deg`);
+                audioPlayer.play();
                 musicWidget.classList.remove('inactive');
                 musicWidget.classList.add('active');
             } else {
+                rotationStart = getCurrentRotation();
+                musicWidget.style.setProperty('--rotation-start', `${rotationStart}deg`);
                 audioPlayer.pause();
-                const computedStyle = window.getComputedStyle(musicWidget);
-                const matrix = computedStyle.transform;
-                if (matrix !== 'none') {
-                    const values = matrix.split('(')[1].split(')')[0].split(',');
-                    const a = values[0];
-                    const b = values[1];
-                    const angle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
-                    rotationStart = angle < 0 ? angle + 360 : angle;
-                }
                 musicWidget.classList.remove('active');
                 musicWidget.classList.add('inactive');
             }
@@ -1807,12 +1816,13 @@
 
         // Start playing on load
         window.addEventListener('load', () => {
+            rotationStart = 0;
+            musicWidget.style.setProperty('--rotation-start', `${rotationStart}deg`);
             audioPlayer.play();
             musicWidget.classList.remove('inactive');
             musicWidget.classList.add('active');
         });
     </script>
-
 
 
 
