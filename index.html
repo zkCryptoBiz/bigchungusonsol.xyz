@@ -46,18 +46,19 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            transform-origin: center;
             transition: transform 0.3s ease-in-out;
         }
 
         .music-widget.active {
-            animation: spin 3s linear infinite;
+            animation: spin infinite 3s linear;
         }
 
         @keyframes spin {
-            0% {
+            from {
                 transform: rotate(0deg);
             }
-            100% {
+            to {
                 transform: rotate(360deg);
             }
         }
@@ -1769,7 +1770,7 @@
 	</div>
 
 	   <div class="music-widget inactive" id="musicWidget">
-        <img src="images/sampledata/94f.jpeg" alt="Music Icon">
+        <img src="your-icon.png" alt="Music Icon">
         <audio id="audioPlayer" class="hidden" loop>
             <source src="your-music-file.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
