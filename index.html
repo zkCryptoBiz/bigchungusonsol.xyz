@@ -31,14 +31,14 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            width: 150px;
+            width: 200px;
             background-color: #f8f8f8;
             border: 1px solid #ddd;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 10px;
-            text-align: center;
             font-family: Arial, sans-serif;
+            text-align: center;
             z-index: 1000;
         }
 
@@ -54,6 +54,12 @@
 
         .music-widget button:hover {
             background-color: #0056b3;
+        }
+
+        .music-widget .song-title {
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: bold;
         }
     </style>
 
@@ -1748,8 +1754,9 @@
 
 	</div>
 
-	 <div class="music-widget">
+	  <div class="music-widget">
         <button id="playPauseBtn">▶ Start</button>
+        <div class="song-title" id="songTitle">Now Playing: Song Name</div>
         <audio id="audioPlayer" loop>
             <source src="your-music-file.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -1759,6 +1766,11 @@
     <script>
         const playPauseBtn = document.getElementById('playPauseBtn');
         const audioPlayer = document.getElementById('audioPlayer');
+        const songTitle = document.getElementById('songTitle');
+
+        // Название текущей песни
+        const currentSong = "Your Song Name"; // Укажите здесь название песни
+        songTitle.textContent = `Now Playing: ${currentSong}`;
 
         playPauseBtn.addEventListener('click', () => {
             if (audioPlayer.paused) {
