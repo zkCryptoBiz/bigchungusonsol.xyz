@@ -1,0 +1,240 @@
+Uri: https://bigchungusonsol.xyz/
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\index.htm
+Content Type: text/html
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/272.png
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\272.png
+Content Type: image/png
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/396.jpg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\396.jpg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/443.jpg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\443.jpg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/53a.jpg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\53a.jpg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/574.png
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\574.png
+Content Type: image/png
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/5cogyp.jpg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\5cogyp.jpg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/679.jpg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\679.jpg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/71F06D57-6FBA-490B-941C-86E98848BDD8_edi.png
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\71F06D57-6FBA-490B-941C-86E98848BDD8_edi.png
+Content Type: image/png
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/73e.jpg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\73e.jpg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/7448C7E4-ACD2-457B-A749-052266F7B459_edi.png
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\7448C7E4-ACD2-457B-A749-052266F7B459_edi.png
+Content Type: image/png
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/75e.png
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\75e.png
+Content Type: image/png
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/821.png
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\821.png
+Content Type: image/png
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/94f.jpeg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\94f.jpeg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/994.jpg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\994.jpg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/9def12_0115cc81fcee40468ff52a4f3fd3e7d9f000.jpeg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\9def12_0115cc81fcee40468ff52a4f3fd3e7d9f000.jpeg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/9def12_8c7bfe2397a14056854c62bc8333e6aamv2.png
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\9def12_8c7bfe2397a14056854c62bc8333e6aamv2.png
+Content Type: image/png
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/9def12_91cb3b7a8a63463397f297b86bbdf2bcmv2.png
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\9def12_91cb3b7a8a63463397f297b86bbdf2bcmv2.png
+Content Type: image/png
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/9def12_ef146fee19544085acf248f57731717ff000.jpeg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\9def12_ef146fee19544085acf248f57731717ff000.jpeg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/a35.gif
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\a35.gif
+Content Type: image/gif
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/a59.jpg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\a59.jpg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/big-chungus-scott-f-towe.jpg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\big-chungus-scott-f-towe.jpg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/big-chungus-still-from-akira-1988-v0-th15ca11w9rb1.webp
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\big-chungus-still-from-akira-1988-v0-th15ca11w9rb1.webp
+Content Type: image/webp
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/bigchung.mp4
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\bigchung.mp4
+Content Type: video/mp4
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/bigchungustitle.png
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\bigchungustitle.png
+Content Type: image/png
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/bigchungustitle2.png
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\bigchungustitle2.png
+Content Type: image/png
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/big_ginourmus_chungus_by_pancakedude_dd80v0e-fullview.jpg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\big_ginourmus_chungus_by_pancakedude_dd80v0e-fullview.jpg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/cd2.jpg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\cd2.jpg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/dex.png
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\dex.png
+Content Type: image/png
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/ec2.jpg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\ec2.jpg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/favicon.webp
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\favicon.webp
+Content Type: image/webp
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/maxresdefault.jpg
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\maxresdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://bigchungusonsol.xyz/images/sampledata/xQKGItc_thumb.png
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\images\sampledata\xQKGItc_thumb.png
+Content Type: image/png
+
+Uri: https://bigchungusonsol.xyz/index.html
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\index.html
+Content Type: text/html
+
+Uri: https://bigchungusonsol.xyz/kabosu.css
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\kabosu.css
+Content Type: text/css
+
+Uri: https://bigchungusonsol.xyz/media/smartslider3/src/SmartSlider3/Application/Frontend/Assets/dist/n2.min﹖ver%3Df4759c2e.js
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\media\smartslider3\src\SmartSlider3\Application\Frontend\Assets\dist\n2.min﹖ver=f4759c2e.js
+Content Type: application/javascript
+
+Uri: https://bigchungusonsol.xyz/media/smartslider3/src/SmartSlider3/Application/Frontend/Assets/dist/smartslider-frontend.min﹖ver%3Df4759c2e.js
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\media\smartslider3\src\SmartSlider3\Application\Frontend\Assets\dist\smartslider-frontend.min﹖ver=f4759c2e.js
+Content Type: application/javascript
+
+Uri: https://bigchungusonsol.xyz/media/smartslider3/src/SmartSlider3/Application/Frontend/Assets/dist/smartslider.min﹖ver%3Df4759c2e.css
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\media\smartslider3\src\SmartSlider3\Application\Frontend\Assets\dist\smartslider.min﹖ver=f4759c2e.css
+Content Type: text/css
+
+Uri: https://bigchungusonsol.xyz/media/smartslider3/src/SmartSlider3/Slider/SliderType/Block/Assets/dist/ss-block.min﹖ver%3Df4759c2e.js
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\media\smartslider3\src\SmartSlider3\Slider\SliderType\Block\Assets\dist\ss-block.min﹖ver=f4759c2e.js
+Content Type: application/javascript
+
+Uri: https://bigchungusonsol.xyz/media/system/js/core.min﹖17121a112ecec3d656efe5c5f493429c9acf2179.js
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\media\system\js\core.min﹖17121a112ecec3d656efe5c5f493429c9acf2179.js
+Content Type: application/javascript
+
+Uri: https://bigchungusonsol.xyz/media/system/js/messages-es5.min﹖3cfa02e233a3320687fe9b7d1134d90c6d88e40a.js
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\media\system\js\messages-es5.min﹖3cfa02e233a3320687fe9b7d1134d90c6d88e40a.js
+Content Type: application/javascript
+
+Uri: https://bigchungusonsol.xyz/media/system/js/messages.min﹖7425e8d1cb9e4f061d5e30271d6d99b085344117.js
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\media\system\js\messages.min﹖7425e8d1cb9e4f061d5e30271d6d99b085344117.js
+Content Type: application/javascript
+
+Uri: https://bigchungusonsol.xyz/media/vendor/joomla-custom-elements/css/joomla-alert.css
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\media\vendor\joomla-custom-elements\css\joomla-alert.css
+Content Type: text/css
+
+Uri: https://bigchungusonsol.xyz/scriptmenu.js
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\scriptmenu.js
+Content Type: application/javascript
+
+Uri: https://bigchungusonsol.xyz/Supercell-Magic-Regular.ttf
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\Supercell-Magic-Regular.ttf
+Content Type: font/ttf
+
+Uri: https://bigchungusonsol.xyz/templates/cassiopeia/css/global/colors_standard.min﹖556de5c8d1323ab479933369210f7109.css
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\templates\cassiopeia\css\global\colors_standard.min﹖556de5c8d1323ab479933369210f7109.css
+Content Type: text/css
+
+Uri: https://bigchungusonsol.xyz/templates/cassiopeia/css/template.min﹖556de5c8d1323ab479933369210f7109.css
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\templates\cassiopeia\css\template.min﹖556de5c8d1323ab479933369210f7109.css
+Content Type: text/css
+
+Uri: https://bigchungusonsol.xyz/templates/cassiopeia/css/vendor/joomla-custom-elements/joomla-alert.min﹖0.2.0.css
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\templates\cassiopeia\css\vendor\joomla-custom-elements\joomla-alert.min﹖0.2.0.css
+Content Type: text/css
+
+Uri: https://bigchungusonsol.xyz/templates/cassiopeia/js/template.min﹖556de5c8d1323ab479933369210f7109.js
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\templates\cassiopeia\js\template.min﹖556de5c8d1323ab479933369210f7109.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/css?display=swap&family=Roboto:300%2C400%2C500%2C600%2C700%2C800%2C900
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\css-1
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Outfit
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\css
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1O4a0Fg.ttf
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\s\outfit\v11\QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1O4a0Fg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiA8.ttf
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\s\roboto\v47\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmUiA8.ttf
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\s\roboto\v47\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\s\roboto\v47\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYaalmUiA8.ttf
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\s\roboto\v47\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYaalmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\s\roboto\v47\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEalmUiA8.ttf
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\s\roboto\v47\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEalmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtalmUiA8.ttf
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\s\roboto\v47\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtalmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://rawgit.com/WeiChiaChang/Easter-egg/master/easter-eggs-collection.js
+File Name: C:\Downloaded Web Sites\bigchungusonsol.xyz\WeiChiaChang\Easter-egg\master\easter-eggs-collection.js
+Content Type: application/javascript
+

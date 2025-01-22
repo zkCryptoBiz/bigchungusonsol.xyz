@@ -1,0 +1,44 @@
+.container-bottom-a>*, .container-bottom-b>*, .container-top-a>*, .container-top-b>* {
+    flex: 1;
+    margin: 0em !important;
+}
+
+.site-grid {background-color:red !important;
+}
+
+
+.container-banner {
+    display: block;
+    margin: 0 0 0rem !important;
+}
+
+body:not(.has-sidebar-right) .site-grid .container-component {
+    grid-column-end: main-end;
+    display: none;
+}
+
+body {background-color:#F9F4E5 !important;}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px white;
+    background-color: darkgrey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: radial-gradient(50% 50% at 50% 50%, #128cff 0%, #128cff 100%);
+    border-radius: 10px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: radial-gradient(50% 50% at 50% 50%, #128cff 0%, #128cff 100%);
+    }
+
+
