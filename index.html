@@ -25,7 +25,6 @@
 			--template-special-color: #001B4C;
 
 		}
-	</style>
 	<style>
         body {
             margin: 0;
@@ -49,6 +48,7 @@
             transform-origin: center;
             transform: rotate(var(--rotation-start, 0deg));
             transition: transform 0.3s ease-in-out;
+            position: relative;
         }
 
         .music-widget.active {
@@ -77,6 +77,26 @@
 
         .hidden {
             display: none;
+        }
+
+        .animation-feedback {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+        }
+
+        .music-widget.active .animation-feedback::before {
+            content: "Playing";
+        }
+
+        .music-widget.inactive .animation-feedback::before {
+            content: "Paused";
         }
     </style>
 	<script type="application/json" class="joomla-script-options new" nonce="ZWMyY2U4NGUwMDRlYmRlOWVkOWRjODZkYmY5NmRiNzRiYzUwNWE1NTU0ZDAxMzNhMTAxYzgwODEwYmRiN2VlODQ0YjI1YzMwYmU0MzgxNzE0YWE1OTY4YWI0NmZiMTYyMmRlZWYyZTE1MzNjMTRkN2U4NTkxNmQyYjdjYjUzNjg=">{"joomla.jtext":{"ERROR":"Error","MESSAGE":"Message","NOTICE":"Notice","WARNING":"Warning","JCLOSE":"Close","JOK":"OK","JOPEN":"Open"},"system.paths":{"root":"","rootFull":"https:\/\/welovekabosu.com\/","base":"","baseFull":"https:\/\/welovekabosu.com\/"},"csrf.token":"71afe87d7f0c5ecdae47f9ceea3be3c2"}</script>
@@ -1876,6 +1896,7 @@
 
 	  <div class="music-widget inactive" id="musicWidget">
         <img src="images/sampledata/bigchungustitle.png" alt="Music Icon">
+        <div class="animation-feedback"></div>
         <audio id="audioPlayer" class="hidden" loop muted>
             <source src="media/BIGCHUNGUS_theme.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
