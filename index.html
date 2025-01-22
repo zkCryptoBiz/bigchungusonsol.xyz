@@ -1771,9 +1771,9 @@
 	</div>
 
 	  <div class="music-widget inactive" id="musicWidget">
-        <img src="images/sampledata/bigchungustitle.png" alt="Music Icon">
-        <audio id="audioPlayer" class="hidden" loop autoplay>
-            <source src="media/BIGCHUNGUS_theme.mp3" type="audio/mpeg">
+        <img src="your-icon.png" alt="Music Icon">
+        <audio id="audioPlayer" class="hidden" loop muted>
+            <source src="your-music-file.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
@@ -1802,6 +1802,7 @@
             if (audioPlayer.paused) {
                 rotationStart = getCurrentRotation();
                 musicWidget.style.setProperty('--rotation-start', `${rotationStart}deg`);
+                audioPlayer.muted = false; // Включаем звук
                 audioPlayer.play();
                 musicWidget.classList.remove('inactive');
                 musicWidget.classList.add('active');
@@ -1818,7 +1819,9 @@
         window.addEventListener('load', () => {
             rotationStart = 0;
             musicWidget.style.setProperty('--rotation-start', `${rotationStart}deg`);
-            audioPlayer.play();
+            audioPlayer.play().catch(() => {
+                console.log('Autoplay blocked by the browser.');
+            });
             musicWidget.classList.remove('inactive');
             musicWidget.classList.add('active');
         });
