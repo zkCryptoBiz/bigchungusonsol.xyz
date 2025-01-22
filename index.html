@@ -76,10 +76,9 @@
         }
 
         .animation-feedback {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: fixed;
+            bottom: 95px;
+            right: 95px;
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -97,7 +96,7 @@
 
         .animation-feedback.show {
             opacity: 1;
-            transform: translate(-50%, -50%) scale(1.2);
+            transform: scale(1.2);
         }
 
         .hidden {
