@@ -33,12 +33,20 @@
             font-family: 'Arial', sans-serif;
         }
 
-        .music-widget {
+        .music-widget-container {
             position: fixed;
             bottom: 20px;
             right: 20px;
             width: 150px;
             height: 150px;
+        }
+
+        .music-widget {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             border-radius: 50%;
             background: #fff;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -103,12 +111,6 @@
 
         .hidden {
             display: none;
-        }
-
-        .music-widget-container {
-            position: relative;
-            width: 150px;
-            height: 150px;
         }
     </style>
 	<script type="application/json" class="joomla-script-options new" nonce="ZWMyY2U4NGUwMDRlYmRlOWVkOWRjODZkYmY5NmRiNzRiYzUwNWE1NTU0ZDAxMzNhMTAxYzgwODEwYmRiN2VlODQ0YjI1YzMwYmU0MzgxNzE0YWE1OTY4YWI0NmZiMTYyMmRlZWYyZTE1MzNjMTRkN2U4NTkxNmQyYjdjYjUzNjg=">{"joomla.jtext":{"ERROR":"Error","MESSAGE":"Message","NOTICE":"Notice","WARNING":"Warning","JCLOSE":"Close","JOK":"OK","JOPEN":"Open"},"system.paths":{"root":"","rootFull":"https:\/\/welovekabosu.com\/","base":"","baseFull":"https:\/\/welovekabosu.com\/"},"csrf.token":"71afe87d7f0c5ecdae47f9ceea3be3c2"}</script>
@@ -1805,12 +1807,12 @@
 	  <div class="music-widget-container">
         <div class="music-widget inactive" id="musicWidget">
             <img src="your-icon.png" alt="Music Icon">
-            <div class="animation-feedback" id="animationFeedback">▶</div>
             <audio id="audioPlayer" class="hidden" loop muted>
                 <source src="your-music-file.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </div>
+        <div class="animation-feedback" id="animationFeedback">▶</div>
     </div>
 
     <script>
