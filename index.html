@@ -56,10 +56,10 @@
 
         @keyframes spin {
             from {
-                transform: rotate(0deg);
+                transform: rotate(var(--rotation-start, 0deg));
             }
             to {
-                transform: rotate(360deg);
+                transform: rotate(calc(var(--rotation-start, 0deg) + 360deg));
             }
         }
 
@@ -1769,8 +1769,8 @@
 
 	</div>
 
-	   <div class="music-widget inactive" id="musicWidget">
-        <img src="images/sampledata/94f.jpeg" alt="Music Icon">
+	  <div class="music-widget inactive" id="musicWidget">
+        <img src="images/sampledata/bigchungustitle.png" alt="Music Icon">
         <audio id="audioPlayer" class="hidden" loop>
             <source src="media/BIGCHUNGUS_theme.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -1780,17 +1780,36 @@
     <script>
         const musicWidget = document.getElementById('musicWidget');
         const audioPlayer = document.getElementById('audioPlayer');
+        let rotationStart = 0;
 
+        // Play music and rotate icon
         musicWidget.addEventListener('click', () => {
             if (audioPlayer.paused) {
                 audioPlayer.play();
+                musicWidget.style.setProperty('--rotation-start', `${rotationStart}deg`);
                 musicWidget.classList.remove('inactive');
                 musicWidget.classList.add('active');
             } else {
                 audioPlayer.pause();
+                const computedStyle = window.getComputedStyle(musicWidget);
+                const matrix = computedStyle.transform;
+                if (matrix !== 'none') {
+                    const values = matrix.split('(')[1].split(')')[0].split(',');
+                    const a = values[0];
+                    const b = values[1];
+                    const angle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
+                    rotationStart = angle < 0 ? angle + 360 : angle;
+                }
                 musicWidget.classList.remove('active');
                 musicWidget.classList.add('inactive');
             }
+        });
+
+        // Start playing on load
+        window.addEventListener('load', () => {
+            audioPlayer.play();
+            musicWidget.classList.remove('inactive');
+            musicWidget.classList.add('active');
         });
     </script>
 
