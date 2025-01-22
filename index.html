@@ -31,35 +31,29 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            width: 300px;
+            width: 150px;
             background-color: #f8f8f8;
             border: 1px solid #ddd;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 15px;
+            padding: 10px;
+            text-align: center;
             font-family: Arial, sans-serif;
             z-index: 1000;
         }
 
-        .music-widget h4 {
-            margin: 0 0 10px 0;
-            font-size: 16px;
-            text-align: center;
-        }
-
-        .music-widget audio {
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        .music-widget .close-btn {
-            position: absolute;
-            top: 5px;
-            right: 10px;
-            background: none;
+        .music-widget button {
+            background-color: #007bff;
+            color: white;
             border: none;
-            font-size: 18px;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 14px;
             cursor: pointer;
+        }
+
+        .music-widget button:hover {
+            background-color: #0056b3;
         }
     </style>
 
@@ -1754,19 +1748,27 @@
 
 	</div>
 
-	 <div class="music-widget" id="musicWidget">
-        <button class="close-btn" onclick="closeWidget()">✖</button>
-        <h4>🎵 Now Playing</h4>
-        <audio controls>
+	 <div class="music-widget">
+        <button id="playPauseBtn">▶ Start</button>
+        <audio id="audioPlayer" loop>
             <source src="your-music-file.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
 
     <script>
-        function closeWidget() {
-            document.getElementById('musicWidget').style.display = 'none';
-        }
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        playPauseBtn.addEventListener('click', () => {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playPauseBtn.textContent = '⏸ Stop';
+            } else {
+                audioPlayer.pause();
+                playPauseBtn.textContent = '▶ Start';
+            }
+        });
     </script>
 
 
