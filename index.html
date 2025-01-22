@@ -92,10 +92,17 @@
             color: white;
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
+            z-index: 10;
         }
 
         .music-widget .feedback-icon.show {
             opacity: 1;
+        }
+
+        .feedback-icon span {
+            display: block;
+            background: none;
+            color: white;
         }
     </style>
 	<script type="application/json" class="joomla-script-options new" nonce="ZWMyY2U4NGUwMDRlYmRlOWVkOWRjODZkYmY5NmRiNzRiYzUwNWE1NTU0ZDAxMzNhMTAxYzgwODEwYmRiN2VlODQ0YjI1YzMwYmU0MzgxNzE0YWE1OTY4YWI0NmZiMTYyMmRlZWYyZTE1MzNjMTRkN2U4NTkxNmQyYjdjYjUzNjg=">{"joomla.jtext":{"ERROR":"Error","MESSAGE":"Message","NOTICE":"Notice","WARNING":"Warning","JCLOSE":"Close","JOK":"OK","JOPEN":"Open"},"system.paths":{"root":"","rootFull":"https:\/\/welovekabosu.com\/","base":"","baseFull":"https:\/\/welovekabosu.com\/"},"csrf.token":"71afe87d7f0c5ecdae47f9ceea3be3c2"}</script>
@@ -1893,11 +1900,11 @@
 
 	</div>
 
-	  <div class="music-widget inactive" id="musicWidget">
-        <img src="images/sampledata/bigchungustitle.png" alt="Music Icon">
-        <div id="feedbackIcon" class="feedback-icon">▶</div>
+	   <div class="music-widget inactive" id="musicWidget">
+        <img src="your-icon.png" alt="Music Icon">
+        <div id="feedbackIcon" class="feedback-icon"><span></span></div>
         <audio id="audioPlayer" class="hidden" loop muted>
-            <source src="media/BIGCHUNGUS_theme.mp3" type="audio/mpeg">
+            <source src="your-music-file.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
@@ -1924,7 +1931,7 @@
 
         // Show temporary feedback
         function showFeedback(icon) {
-            feedbackIcon.textContent = icon;
+            feedbackIcon.querySelector('span').textContent = icon;
             feedbackIcon.classList.add('show');
             setTimeout(() => feedbackIcon.classList.remove('show'), 1000);
         }
