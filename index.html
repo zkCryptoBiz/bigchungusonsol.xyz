@@ -75,6 +75,29 @@
             filter: grayscale(100%);
         }
 
+        .animation-feedback {
+            position: fixed;
+            bottom: 190px;
+            right: 40px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .animation-feedback.show {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
         .hidden {
             display: none;
         }
@@ -1771,17 +1794,28 @@
 	</div>
 
 	  <div class="music-widget inactive" id="musicWidget">
-        <img src="images/sampledata/bigchungustitle.png" alt="Music Icon">
+        <img src="your-icon.png" alt="Music Icon">
         <audio id="audioPlayer" class="hidden" loop muted>
-            <source src="media/BIGCHUNGUS_theme.mp3" type="audio/mpeg">
+            <source src="your-music-file.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
+    <div class="animation-feedback" id="animationFeedback">▶</div>
 
     <script>
         const musicWidget = document.getElementById('musicWidget');
         const audioPlayer = document.getElementById('audioPlayer');
+        const animationFeedback = document.getElementById('animationFeedback');
         let rotationStart = 0;
+
+        // Function to show animation feedback
+        function showFeedback(icon) {
+            animationFeedback.textContent = icon;
+            animationFeedback.classList.add('show');
+            setTimeout(() => {
+                animationFeedback.classList.remove('show');
+            }, 500);
+        }
 
         // Function to get the current rotation angle
         function getCurrentRotation() {
@@ -1806,12 +1840,14 @@
                 audioPlayer.play();
                 musicWidget.classList.remove('inactive');
                 musicWidget.classList.add('active');
+                showFeedback('▶');
             } else {
                 rotationStart = getCurrentRotation();
                 musicWidget.style.setProperty('--rotation-start', `${rotationStart}deg`);
                 audioPlayer.pause();
                 musicWidget.classList.remove('active');
                 musicWidget.classList.add('inactive');
+                showFeedback('⏸');
             }
         });
 
